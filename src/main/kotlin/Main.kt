@@ -30,7 +30,7 @@ fun getVisaMirCom(amount: Int): Int {
     if (amount * (comPer / 100) < minCom) {
         commission = minCom
     } else {
-        commission = amount * (comPer / 100).toInt()
+        commission = (amount * (comPer / 100)).toInt()
     }
     return commission
 }
